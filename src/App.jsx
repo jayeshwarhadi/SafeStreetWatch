@@ -74,7 +74,7 @@ export default function App(){
     const next = [h, ...hazards]
     setHazards(next)
     setSelectedPos(null)
-    setStatus('Saved locally (localStorage)')
+    setStatus('Saved Successfully')
 
     // Optional: try to sync to serverless function if available
     try{
