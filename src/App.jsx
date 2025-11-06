@@ -178,11 +178,11 @@ export default function App(){
                   <div style={{display:'grid',gridTemplateColumns:'1fr 140px',gap:8}}>
                     <input placeholder="Title" value={form.title} onChange={e=>setForm(f=>({...f,title:e.target.value}))} />
                     <select value={form.category} onChange={e=>setForm(f=>({...f,category:e.target.value}))}>
-                      <option value="pothole">Pothole</option>
-                      <option value="flood">Flood</option>
-                      <option value="accident">Accident</option>
-                      <option value="debris">Debris</option>
-                      <option value="other">Other</option>
+                      <option style={{color:'black'}} value="pothole">Pothole</option>
+                      <option style={{color:'black'}} value="flood">Flood</option>
+                      <option style={{color:'black'}} value="accident">Accident</option>
+                      <option style={{color:'black'}} value="debris">Debris</option>
+                      <option style={{color:'black'}} value="other">Other</option>
                     </select>
                   </div>
                   <textarea placeholder="Description (optional)" rows={3} value={form.description} onChange={e=>setForm(f=>({...f,description:e.target.value}))} style={{marginTop:8}} />
