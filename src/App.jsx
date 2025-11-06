@@ -227,26 +227,27 @@ export default function App(){
 
         <div>
           <div className="card">
-            <h3>Sync & Notes</h3>
-            <p style={{marginTop:6,fontSize:13}}>This app stores all data in your browser's localStorage by default. That means hazards are available only on this browser/device unless you export/import or enable a server function.</p>
-            <p style={{fontSize:13}}>Optional: configure a Netlify function that saves hazards to MongoDB Atlas. See netlify/functions/syncHazards/index.js in this repo for an example. Set environment variable MONGODB_URI in Netlify settings to enable.
+            <h3>Community Engagement Project on Road Safety</h3>
+            <p style={{marginTop:6,fontSize:13}}>By team Jayesh Warhadi , Rohan Ghevande , Chaitanya Gadhave and Siddhesh Durgude</p>
+            <p style={{fontSize:13}}>This is an Crowd Sourced Project where the community can flag Hazards on road related to Potholes , Flooding , Accident , Debries or any other hazards. which will help other people travel safely.
             </p>
             <div style={{marginTop:8}}><strong>Status:</strong> {status}</div>
           </div>
 
           <div style={{height:12}} />
           <div className="card">
-            <h4>Tips</h4>
+            <h4>Features</h4>
             <ul style={{margin:'6px 0 0 18px'}}>
-              <li>Encourage users to upvote accurate reports.</li>
-              <li>Photos are stored as base64 in localStorage — can grow large, consider server storage if many photos.</li>
-              <li>To make global: implement account system and backend DB; Netlify Functions can call MongoDB Atlas for this.</li>
+              <li>Add and view road hazards on an interactive map</li>
+              <li>Each hazard: title, description, category, photo (optional), votes, resolved state</li>
+              <li>Users can upvote or mark hazards resolved</li>
+              <li>Map: uses react-leaflet (OpenStreetMap)</li>
             </ul>
           </div>
         </div>
       </div>
 
-      <footer style={{marginTop:12,opacity:0.7,textAlign:'center'}}>Built for Netlify static + optional serverless sync • Data defaults to localStorage</footer>
+      <footer style={{marginTop:12,opacity:0.7,textAlign:'center'}}>Built by Leaflet , React and Netlify.</footer>
     </div>
   )
 }
